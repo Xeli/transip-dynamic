@@ -1,0 +1,4 @@
+FROM scratch
+ADD ca-certificates.crt /etc/ssl/cert.pem
+ADD transip-dynamic /
+CMD ["/transip-dynamic"]
