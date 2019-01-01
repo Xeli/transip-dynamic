@@ -29,6 +29,16 @@ How to use it
 
 - You probably want to run this automatically every hour orso with cron.
 
+Using the Docker Image
+============
+
+It builds automatically to https://cloud.docker.com/repository/docker/xelid/transip-ddns this means it is very easy to get this started when you have docker up and running.
+
+Mount your config file and transip private key to the docker image and simply run the image.
+For example:
+
+		docker run -v config:/ -v key.pem:/ xelid/transip-ddns
+
 Alternatives
 ============
 * [transip-dyndns](https://github.com/RolfKoenders/transip-dyndns) (deals poorly
